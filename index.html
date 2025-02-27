@@ -1,0 +1,105 @@
+ <!--head contains all content that wont be shown to the user-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
+    <title>Personal Portfolio</title>
+</head>
+<body>                  
+
+    <header class="headerclass">    
+        <nav class="navigation">
+            <button><a href="index.html"> Home</a></button>
+            <button><a href="#projects">Projects</a></button>
+            <button><a href="#experience">Experience</a></button>
+            <button><a href="#contact">Contact</a></button>           
+        </nav>
+        <h1>Ryandeep Shelopal</h1>
+        <h2>Computer Engineer</h2>
+    </header>
+
+    <main class="mainclass">
+        <section>
+            <h2>About Me</h2>
+            <div class="aboutmeclass">
+                <figure>
+                    <img src="mee.jpg" alt="Placeholder image" class="profilepicture">
+                </figure>
+                <p>Hey there! I'm Ryan, a Computer Engineering student at UCSD, graduating in June 2025. This portfolio is
+                     a showcase of my journey in software development, embedded systems, and machine learning, along with my latest 
+                     dive into frontend web development. I’m always looking to push my skills further, whether it's optimizing low-level 
+                     hardware performance, improving machine learning models, or crafting intuitive web experiences. Feel free to 
+                     explore, and don’t hesitate to reach out!</p>
+             </div>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li>
+                    <strong>Developer Journal</strong> - 
+                    <a href="https://github.com/cse110-sp24-group33/cse110-sp24-group33" target="_blank">GitHub</a>
+                    <p>Developed a streamlined and user-friendly journaling tool tailored for developers, enabling them to efficiently manage deadlines and daily tasks.</p>
+                </li>
+                <li>
+                    <strong>SHA-256 Hardware Implementation</strong> - 
+                    <a href="https://github.com/yourgithubusername" target="_blank">GitHub</a>
+                    <p>Designed and implemented a SHA-256 hashing algorithm in SystemVerilog, ensuring efficient hardware acceleration.</p>
+                </li>
+                <li>
+                    <strong>Custom CPU Design</strong> - 
+                    <a href="https://github.com/a6srivastava/cse141L_processor" target="_blank">GitHub</a>
+                    <p>Developed a custom processor architecture in SystemVerilog, implementing an accumulator-based ISA.</p>
+                </li>
+                <li>
+                    <strong>Recommender System (Machine Learning)</strong> - 
+                    <a href="https://github.com/yourgithubusername" target="_blank">GitHub</a>
+                    <p>Built an ML-based recommendation system for predicting user-book interactions, leveraging **SVD, Jaccard similarity, and Logistic Regression**.</p>
+                </li>
+                <li>
+                    <strong>UART Communication System</strong> - 
+                    <a href="https://github.com/yourgithubusername" target="_blank">GitHub</a>
+                    <p>Developed a UART Transmitter-Receiver system in SystemVerilog, implementing a handshake synchronizer for reliable data transfer.</p>
+                </li>
+            </ul>
+        </section>
+        
+        <section id="experience">
+            <h2>Experience</h2>
+            <table>
+                 <!--<caption>Work Experience</caption>-->
+                <tr>
+                    <th>Company</th>
+                    <th>Role</th>
+                    <th>Year</th>
+                </tr>
+                <tr>
+                    <td>Underwriter's Laboratories</td>
+                    <td>Wireless Product Testing</td>
+                    <td>2019</td>
+                </tr>
+            </table>
+        </section>
+        
+        <section id="contact">
+            <h2>Contact Info</h2>
+            <address>
+                Email: <a href="mailto:someone@example.com">rdshelopal@gmail.com</a><br>
+                GitHub: <a href="https://github.com/rdshelopal">GitHub</a><br>
+                LinkedIn: <a href="https://www.linkedin.com/in/ryan-shelopal/">LinkedIn</a>
+            </address>
+        </section>
+        
+        <footer>
+            <form onsubmit="alert('Thank You for Submitting!')">
+                <input type="text" placeholder="Message Me!">
+                <button>Submit</button>
+                <hr>
+            <p>&copy; 2025 Ryandeep Shelopal</p>
+            </form>
+        </footer>
+    </main>
+</body>
