@@ -94,12 +94,33 @@
         </section>
         
         <footer>
-            <form onsubmit="alert('Thank You for Submitting!')">
-                <input type="text" placeholder="Message Me!">
-                <button>Submit</button>
-                <hr>
-            <p>&copy; 2025 Ryandeep Shelopal</p>
+            <form action="https://httpbin.org/post" method="POST" onsubmit="alert('Thank You for Submitting!')">
+                <!-- Name Field with required attribute and output elements for errors -->
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                <output class="error" aria-live="polite"></output>
+                <output class="info" aria-live="polite"></output>
+        
+                <!-- Email Field -->
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <output class="error" aria-live="polite"></output>
+                <output class="info" aria-live="polite"></output>
+        
+                <!-- Comment Section -->
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="comments" placeholder="Your message here" required></textarea>
+                <output class="error" aria-live="polite"></output>
+                <output class="info" aria-live="polite"></output>
+        
+                <!-- Hidden Field for Bot Detection -->
+                <input type="hidden" name="possible_bot" value="true">
+        
+                <!-- Submit Button -->
+                <button type="submit">Submit</button>
             </form>
-        </footer>
+        
+            <hr>
+            <p>&copy; 2025 Ryandeep Shelopal</p>
     </main>
 </body>
