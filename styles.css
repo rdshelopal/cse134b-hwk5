@@ -126,6 +126,15 @@
     border: 1px solid black;
    }
 
+   input:required:invalid, textarea:required:invalid {
+    border: 2px solid red;
+    background-color: #ffe6e6;
+   }
+
+    input:required:valid, textarea:required:valid {
+    border: 2px solid green;
+    background-color: #e6ffe6;
+   } 
   
 
 }
