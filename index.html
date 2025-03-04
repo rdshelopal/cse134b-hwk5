@@ -94,7 +94,8 @@
         </section>
         
         <footer>
-            <form action="https://httpbin.org/post" method="POST" onsubmit="alert('Thank You for Submitting!')">
+            <form action="https://httpbin.org/post" method="POST" novalidate onsubmit="alert('Thank You for Submitting!')">
+
                 <!-- Name Field with required attribute and output elements for errors -->
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" placeholder="Enter your name" required minlength="2" maxlength="50">
@@ -115,12 +116,22 @@
         
                 <!-- Hidden Field for Bot Detection -->
                 <input type="hidden" name="possible_bot" value="true">
+
+                <!-- Hidden Field for Form Errors -->
+                <input type="hidden" name="form_errors" id="form_errors">
+
+
+
         
                 <!-- Submit Button -->
                 <button type="submit">Submit</button>
+
+
             </form>
         
             <hr>
             <p>&copy; 2025 Ryandeep Shelopal</p>
     </main>
+    <script src="form-validation.js" defer></script>
+
 </body>
