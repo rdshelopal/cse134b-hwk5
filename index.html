@@ -1,12 +1,20 @@
  <!--head contains all content that wont be shown to the user-->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <link rel="stylesheet" href="styles.css">
     <title>Personal Portfolio</title>
+     <!-- Fallback for no JavaScript -->
+     <noscript>
+        <style>
+            #theme-toggle {
+                display: none;
+            }
+        </style>
+    </noscript>
 </head>
 <body>                  
 
@@ -17,6 +25,9 @@
             <button><a href="#experience">Experience</a></button>
             <button><a href="#contact">Contact</a></button>           
         </nav>
+        <button id="theme-toggle" aria-label="Toggle Dark/Light Mode">
+            🌞 / 🌜
+        </button>
         <h1>Ryandeep Shelopal</h1>
         <h2>Computer Engineer</h2>
     </header>
@@ -133,5 +144,7 @@
             <p>&copy; 2025 Ryandeep Shelopal</p>
     </main>
     <script src="form-validation.js" defer></script>
+    <script src="theme.js" defer></script>
+
 
 </body>
